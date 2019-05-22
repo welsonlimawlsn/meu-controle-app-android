@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_login_cadastro"
+    tools:context=".CadastroActivity">
+
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:id="@+id/logoConstraintLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand_light"
+                android:text="@string/meu"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/logo_login"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/quicksand_light"
+                android:text="@string/controle"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/logo_login"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView"
+                app:layout_constraintTop_toTopOf="parent" />
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/cadastro"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/logoConstraintLayout" />
+
+        <EditText
+            android:id="@+id/editText4"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_plain_text"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:autofillHints=""
+            android:background="@drawable/background_plain_text"
+            android:ems="10"
+            android:hint="@string/sobrenome"
+            android:inputType="textCapWords"
+            android:paddingStart="@dimen/padding_plain_text_start"
+            android:paddingEnd="@dimen/padding_plain_text_end"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white_transparent"
+            android:textSize="@dimen/font_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+        <EditText
+            android:id="@+id/editText6"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_plain_text"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:autofillHints=""
+            android:background="@drawable/background_plain_text"
+            android:ems="10"
+            android:hint="@string/usuario"
+            android:inputType="textNoSuggestions"
+            android:paddingStart="@dimen/padding_plain_text_start"
+            android:paddingEnd="@dimen/padding_plain_text_end"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white_transparent"
+            android:textSize="@dimen/font_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText5" />
+
+        <EditText
+            android:id="@+id/editText5"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_plain_text"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:autofillHints=""
+            android:background="@drawable/background_plain_text"
+            android:ems="10"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress"
+            android:paddingStart="@dimen/padding_plain_text_start"
+            android:paddingEnd="@dimen/padding_plain_text_end"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white_transparent"
+            android:textSize="@dimen/font_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText4" />
+
+        <EditText
+            android:id="@+id/senhaEditTextCadastro"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_plain_text"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:autofillHints=""
+            android:background="@drawable/background_plain_text"
+            android:ems="10"
+            android:hint="@string/senha"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:paddingStart="@dimen/padding_plain_text_start"
+            android:paddingEnd="@dimen/padding_plain_text_end"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white_transparent"
+            android:textSize="@dimen/font_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/editText6" />
+
+        <EditText
+            android:id="@+id/editText3"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/height_plain_text"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:autofillHints=""
+            android:background="@drawable/background_plain_text"
+            android:ems="10"
+            android:hint="@string/nome"
+            android:inputType="textCapWords"
+            android:paddingStart="@dimen/padding_plain_text_start"
+            android:paddingEnd="@dimen/padding_plain_text_end"
+            android:textColor="@color/white"
+            android:textColorHint="@color/white_transparent"
+            android:textSize="@dimen/font_size"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <Button
+            android:id="@+id/criarContaButtonCadastro"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="8dp"
+            android:background="@color/colorAccent"
+            android:text="@string/criar_conta"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/senhaEditTextCadastro" />
+
+        <ProgressBar
+            android:id="@+id/progressBarCadastro"
+            style="@style/ProgressBar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:elevation="20dp"
+            app:layout_constraintBottom_toBottomOf="@+id/criarContaButtonCadastro"
+            app:layout_constraintEnd_toEndOf="@+id/criarContaButtonCadastro"
+            app:layout_constraintStart_toStartOf="@+id/criarContaButtonCadastro"
+            app:layout_constraintTop_toTopOf="@+id/criarContaButtonCadastro" />
+
+    </android.support.constraint.ConstraintLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="height_plain_text">50dp</dimen>
+    <dimen name="padding_plain_text_start">10dp</dimen>
+    <dimen name="padding_plain_text_end">10dp</dimen>
+    <dimen name="logo_login">50sp</dimen>
+    <dimen name="title">20sp</dimen>
+    <dimen name="font" />
+    <dimen name="font_size">14sp</dimen>
+</resources>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Meu Controle</string>
+    <string name="cadastra_se">cadastra-se</string>
+    <string name="esqueci_a_senha">esqueci a senha</string>
+    <string name="novo_por_aqui">novo por aqui?</string>
+    <string name="usuario">usuário</string>
+    <string name="senha">senha</string>
+    <string name="entrar">entrar</string>
+    <string name="cadastro">cadastro</string>
+    <string name="nome">nome</string>
+    <string name="sobrenome">sobrenome</string>
+    <string name="email">e-mail</string>
+    <string name="criar_conta">criar conta</string>
+    <string name="controle">controle</string>
+    <string name="meu">meu</string>
+    <string name="recupearacao_senha">recuperacao de senha</string>
+    <string name="recuperar_senha">recuperar senha</string>
+</resources>
