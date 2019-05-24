@@ -99,10 +99,10 @@
             android:textSize="@dimen/font_size"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editText" />
+            app:layout_constraintTop_toBottomOf="@+id/usuarioEditTextLogin" />
 
         <EditText
-            android:id="@+id/editText"
+            android:id="@+id/usuarioEditTextLogin"
             android:layout_width="0dp"
             android:layout_height="@dimen/height_plain_text"
             android:layout_marginStart="8dp"
